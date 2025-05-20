@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang | Taman Titik Nol Kutai Kartanegara</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between; 
+      padding: 10px 30px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    .logo h2 {
+      font-size: 20px;
+      color: #2b572b;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px; 
+      flex: 1;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 1em;
+    }
+
+    nav a:hover {
+      color: green;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 1000;
+      min-width: 200px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+      font-size: 1em;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .dropdown-content a:last-child {
+      border-bottom: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #2b572b;
+      color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .hero {
+      position: relative;
+      height: 400px;
+      background-image: url('images/Taman Titik Nol.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; 
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5); 
+    }
+
+    .hero-overlay h1 {
+      font-size: 3em;
+      color: white; 
+      font-weight: bold;
+    }
+
+    .content-section {
+      padding: 40px 20px;
+      background-color: white;
+      margin-bottom: 20px;
+    }
+
+    .content-section h2 {
+      font-size: 2em;
+      color: #2b572b;
+      margin-bottom: 10px;
+    }
+
+    .content-section p {
+      line-height: 1.8;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2b572b;
+      color: white;
+      margin-top: 40px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+    <div class="logo">
+      <img src="images/logo.jpeg" alt="Logo Taman Titik Nol">
+      <h2>Taman Titik Nol Kukar</h2>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="tentang.html" class="active">Tentang</a>
+        <div class="dropdown-content">
+          <a href="#sejarah" onclick="showSection('sejarah')">Sejarah Taman Titik Nol</a>
+          <a href="#luas" onclick="showSection('luas')">Luas Taman Titik Nol</a>
+        </div>
+      </div>
+      <a href="galeri.html">Galeri</a>
+      <a href="fasilitas.html">Fasilitas</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Gambar Taman Titik Nol -->
+  <div class="hero">
+    <div class="hero-overlay">
+      <h1>Tentang</h1>
+    </div>
+  </div>
+
+  <!-- Penjelasan Umum -->
+  <section id="penjelasan-umum" class="content-section">
+    <h2>Taman Titik Nol Kutai Kartanegara</h2>
+    <p>
+      Taman Titik Nol Tenggarong adalah ruang terbuka hijau yang menjadi ikon baru Kota Tenggarong, Kabupaten Kutai Kartanegara, Kalimantan Timur. Terletak tepat di pusat kota, di depan Museum Mulawarman dan berdekatan dengan Pasar Seni Tenggarong, taman ini menjadi titik strategis sebagai pusat aktivitas warga sekaligus destinasi wisata kota.
+
+      Diresmikan pada 26 September 2023 oleh Bupati Kutai Kartanegara Edi Damansyah bersama Sultan Kutai Kartanegara Ing Martadipura Aji Muhammad Arifin, taman ini dibangun melalui kolaborasi antara pemerintah daerah dan sektor swasta melalui program Tanggung Jawab Sosial Perusahaan (TJSP).
+
+      Taman ini mengusung konsep urban tropis yang ramah lingkungan dan estetis. Fasilitasnya mendukung aktivitas masyarakat dari berbagai kalangan, mulai dari ruang bersantai, jalur pedestrian, area pertunjukan seni, hingga ruang khusus untuk UMKM lokal.
+
+      Dengan letak yang strategis dan nilai sejarah yang kuat, Taman Titik Nol bukan hanya menjadi tempat rekreasi, tetapi juga simbol modernisasi kota yang tetap berpijak pada akar budaya dan kearifan lokal.
+    </p>
+  </section>
+
+  <!-- Konten Wisata -->
+  <section id="sejarah" class="content-section hidden">
+    <h2>🏛️Sejarah Taman Titik Nol</h2>
+    <p>
+    Taman Titik Nol diresmikan pada Selasa, 26 September 2023, oleh Bupati Kutai Kartanegara, Edi Damansyah, bersama Sultan Kutai Kartanegara Ing Martadipura, Aji Muhammad Arifin. Peresmian ini menandai sinergi antara pemerintah daerah dan kesultanan dalam membangun ikon kota yang modern namun tetap menjaga nilai budaya dan sejarah lokal.
+
+    Pembangunan taman ini merupakan hasil kolaborasi antara Pemerintah Kabupaten Kutai Kartanegara dan pihak swasta melalui program Tanggung Jawab Sosial Perusahaan (TJSP). Kontribusi dunia usaha dalam pembangunan infrastruktur ini diapresiasi oleh Bupati Edi Damansyah sebagai bentuk partisipasi aktif dalam pembangunan daerah.
+
+    Terletak di depan Museum Mulawarman, taman ini berada di lokasi strategis yang dianggap sebagai titik nol atau pusat orientasi Kota Tenggarong. Dengan desain yang modern dan estetika urban tropis, taman ini tidak hanya menjadi ruang terbuka hijau, tetapi juga simbol integrasi antara pembangunan modern dan pelestarian budaya lokal.
+
+    Selain sebagai tempat rekreasi, Taman Titik Nol juga berfungsi sebagai pusat kegiatan masyarakat, seni budaya, serta wadah pengembangan Usaha Mikro, Kecil, dan Menengah (UMKM) lokal. Berbagai fasilitas disediakan untuk mendukung aktivitas ini, menjadikannya sebagai ikon baru wisata dan pusat aktivitas masyarakat di Tenggarong.
+    </p>
+  </section>
+
+  <section id="luas" class="content-section hidden">
+    <h2>Luas Taman Titik Nol</h2>
+    <p>
+      Taman Titik Nol terletak tepat di pusat kota Tenggarong, Kabupaten Kutai Kartanegara, Kalimantan Timur. Lokasinya yang strategis berada di depan Museum Mulawarman dan dekat dengan Pasar Seni Tenggarong, menjadikan taman ini mudah dijangkau oleh warga dan wisatawan.
+
+      Meskipun luas pasti taman belum dipublikasikan secara resmi, area taman dirancang cukup luas untuk menampung berbagai fasilitas publik, seperti jalur pedestrian, ruang terbuka hijau, area pertunjukan seni, serta stan UMKM. Dengan luas yang memadai, taman ini dapat menampung berbagai aktivitas rekreasi dan budaya masyarakat.
+
+      Aksesibilitas taman sangat baik, karena dapat dijangkau dengan mudah dari berbagai penjuru kota menggunakan kendaraan pribadi maupun transportasi umum. Keberadaan taman di pusat kota juga membuatnya menjadi tempat favorit untuk bersantai, berkumpul, dan berinteraksi sosial.
+    </p>
+  </section>
+
+  <!-- <section id="keunikan" class="content-section hidden">
+ 
+  </section> -->
+
+  <footer>
+    &copy; 2025 Taman Titik Nol Kutai Kartanegara. All rights reserved.
+  </footer>
+
+  <script>
+    // Fungsi untuk menampilkan bagian berdasarkan hash di URL
+    function showSectionFromHash() {
+      const hash = window.location.hash.substring(1); // Ambil hash tanpa tanda #
+      const sections = ['penjelasan-umum', 'sejarah', 'luas',];
+
+      // Sembunyikan semua bagian
+      sections.forEach(sectionId => {
+        document.getElementById(sectionId).classList.add('hidden');
+      });
+
+      // Tampilkan bagian yang sesuai dengan hash
+      if (sections.includes(hash)) {
+        document.getElementById(hash).classList.remove('hidden');
+      } else {
+        // Jika tidak ada hash, tampilkan penjelasan umum
+        document.getElementById('penjelasan-umum').classList.remove('hidden');
+      }
+    }
+
+    // Panggil fungsi saat halaman dimuat
+    window.onload = showSectionFromHash;
+
+    // Panggil fungsi saat hash di URL berubah (misalnya, pengguna menavigasi dengan tautan)
+    window.onhashchange = showSectionFromHash;
+  </script>
+</body>
+</html>

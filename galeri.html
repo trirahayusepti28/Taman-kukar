@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang | Taman Titik Nol Kutai Kartanegara</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      padding: 10px 30px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    .logo h2 {
+      font-size: 20px;
+      color: #2b572b;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center; 
+      gap: 20px; 
+      flex: 1; 
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 1em;
+    }
+
+    nav a:hover {
+      color: green;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-box input[type="text"] {
+      padding: 6px 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .search-box button {
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-left: none;
+      background-color: #2b572b;
+      color: white;
+      cursor: pointer;
+      border-radius: 0 3px 3px 0;
+    }
+
+   .hero {
+      position: relative;
+      height: 400px;
+      background-image: url('images/Taman Titik Nol.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; 
+    }
+    
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5); 
+    }
+
+    .hero-overlay h1 {
+      font-size: 3em;
+      color: white; 
+      font-weight: bold;
+    }
+
+    .welcome-section {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background-color: #f5f5f5;
+    }
+
+    .welcome-section h1 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      color: #2b572b;
+    }
+
+    .welcome-section p {
+      font-size: 1.1em;
+      max-width: 700px;
+      margin: auto;
+      color: #555;
+    }
+
+    .content-section {
+      padding: 40px 30px;
+      background-color: white;
+    }
+
+    .content-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2b572b;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #f0f0f0;
+      padding: 20px;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #2b572b;
+    }
+
+    .card p {
+      color: #444;
+    }
+
+    
+    .gallery-section {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 8px 24px rgba(43, 87, 43, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: filter 0.3s, opacity 0.3s;
+}
+
+.gallery-item:hover img {
+  filter: brightness(0.95) contrast(1.1);
+  opacity: 0.92;
+}
+
+.gallery-item p {
+  padding: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2b572b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images\logo.jpeg" alt="Logo Taman Titik Nol">
+      <h2>Taman Titik Nol Kukar</h2>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tentang.html" class="active">Tentang</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="fasilitas.html">Fasilitas</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Gambar Taman Titik Nol -->
+  <div class="hero">
+    <div class="hero-overlay">
+      <h1>Galeri</h1>
+    </div>
+  </div>
+
+  <!-- Galeri Gambar -->
+  <section class="gallery-section">
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="images\Taman Titik Nol.jpg" alt="Taman Titik Nol">
+        <p>Taman Titik Nol</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images\ruang terbuka hijau.jpg" alt="Area Hijau">
+        <p>Area Hijau</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images\gazebo.jpg" alt="Gazebo">
+        <p>Gazebo</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images\umkm.jpg" alt="Stand Kuliner">
+        <p>Stand Kuliner</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images\Lampu Jalan.jpg" alt="Lampu Taman">
+        <p>Lampu Taman</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images\mushola.jpg" alt="Mushola">
+        <p>Mushola</p>
+      </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Taman Titik Nol Kutai Kartanegara. All rights reserved.
+  </footer>
+
+</body>
+</html>

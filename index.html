@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taman Titik Nol Kutai Kartanegara</title>
+
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .logo h2 {
+    font-size: 20px;
+    color: #2b572b;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1em;
+  }
+
+  nav a:hover {
+    color: green;
+  }
+
+  .hero {
+    position: relative;
+    height: 500px; 
+    background-image: url('images/Taman Titik Nol.jpg'); 
+    background-size: cover;
+    background-position: center;
+  }
+
+  .welcome-section {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background-color: #f5f5f5;
+  }
+
+  .welcome-section h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #2b572b;
+  }
+
+  .welcome-section p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+  }
+
+  .content-section {
+    padding: 40px 30px;
+    background-color: white;
+  }
+
+  .content-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2b572b;
+  }
+
+  .card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card h3 {
+    margin-bottom: 10px;
+    color: #2b572b;
+  }
+
+  .card p {
+    color: #444;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2b572b;
+    color: white;
+  }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpeg" alt="Logo Taman Titik Nol">
+      <h2>Taman Titik Nol Kukar</h2>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="fasilitas.html">Fasilitas</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Gambar Taman Titik Nol -->
+  <div class="hero"></div>
+
+  <section class="welcome-section">
+    <h1>Taman Titik Nol Kutai Kartanegara</h1>
+    <p>Selamat Datang di Taman Titik Nol Kutai Kartanegara 
+      taman ini adalah sebuah ruang terbuka hijau yang terletak di pusat kota Tenggarong, Kutai Kartanegara, Kalimantan Timur.
+      Taman ini memiliki nilai sejarah dan budaya yang tinggi karena menjadi simbol awal penataan wilayah Kutai Kartanegara. Selain itu, taman ini juga menjadi salah satu destinasi wisata favorit bagi masyarakat lokal maupun wisatawan.</p>
+  </section>
+
+  <section class="content-section">
+    <h2>Informasi Terkait</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Sejarah Taman Titik Nol</h3>
+        <p>Taman ini menjadi simbol awal penataan wilayah Kutai Kartanegara dan bagian penting dari sejarah lokal.</p>
+        <a href="tentang.html#sejarah" class="read-more">Selengkapnya &rsaquo;</a>
+      </div>
+      <div class="card">
+        <h3>Letak, Luas & Aksebilitas</h3>
+        <p>Taman ini terletak di pusat kota Tenggarong dengan akses mudah dari berbagai penjuru kota.</p>
+        <a href="tentang.html#luas" class="read-more">Selengkapnya &rsaquo;</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Taman Titik Nol Kutai Kartanegara. All rights reserved.
+  </footer>
+
+</body>
+</html>

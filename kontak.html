@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | Taman Titik Nol Kutai Kartanegara</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between; /* Memisahkan logo di kiri dan navigasi di tengah */
+      align-items: center;
+      padding: 10px 30px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    .logo h2 {
+      font-size: 20px;
+      color: #2b572b;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center; /* Menempatkan menu navigasi di tengah */
+      gap: 20px; /* Memberikan jarak antar menu */
+      flex: 1; /* Membuat navigasi mengambil ruang yang tersisa */
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 1em;
+    }
+
+    nav a:hover {
+      color: green;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-box input[type="text"] {
+      padding: 6px 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .search-box button {
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-left: none;
+      background-color: #2b572b;
+      color: white;
+      cursor: pointer;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .hero {
+      position: relative;
+      height: 400px;
+      background-image: url('images/Taman Titik Nol.jpg'); /* Ganti dengan gambar taman */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* Membuat gambar tetap diam */
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5); 
+    }
+
+    .hero-overlay h1 {
+      font-size: 3em;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .welcome-section {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background-color: #f5f5f5;
+    }
+
+    .welcome-section h1 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      color: #2b572b;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: #f5f5f5;
+    }
+
+    .contact-form, .contact-info {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+
+    .contact-form h2, .contact-info h2 {
+      font-size: 1.8em;
+      color: #2b572b;
+      margin-bottom: 20px;
+    }
+
+    .contact-form form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .contact-form form input, .contact-form form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .contact-form form button {
+      padding: 10px 20px;
+      background-color: #2b572b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .contact-form form button:hover {
+      background-color: #1e421e;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+      font-size: 1em;
+      color: #555;
+    }
+
+    .contact-info p:first-child {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2b572b;
+      color: white;
+    }
+    .contact-section, .map-section {
+    max-width: 800px;
+    margin: 40px auto; 
+    padding: 20px;
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+  }
+    .contact-section h2, .map-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #2b572b;
+    }
+    .contact-section p {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .contact-section p span {
+      font-weight: bold;
+      color: #2b572b;
+    }
+    .map-section iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 10px; 
+    }
+    .map-section h2 {
+      margin-bottom: 20px;
+      color: #2b572b;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpeg" alt="Logo Taman Titik Nol">
+      <h2>Taman Titik Nol Kukar</h2>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="fasilitas.html">Fasilitas</a>
+      <a href="kontak.html" class="active">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Gambar Taman Titik Nol -->
+  <div class="hero">
+    <div class="hero-overlay">
+      <h1>Kontak Kami</h1>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>Kontak Kami</h2>
+    <p><span>Alamat:</span> Jl. Diponegoro No. 3, Kec.Tenggarong, Kab.Kutai Kartanegara, kalimantan Timur 75513</p>
+    <p><span>Ig:</span> @pesona_kukar, @info_etam</p>
+    <p><span>Fax:</span> (0541) 654321</p>
+    <p><span>Email:</span> info@tamantitiknol.co.id</p>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <h2>Lokasi Taman Titik Nol</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15930.01204983727!2d117.1576707!3d-0.4125957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67b1e6e9b1d7b%3A0x4e7b2b7b5f9c2e2e!2sTaman%20Titik%20Nol%2C%20Jl.%20Diponegoro%20No.26%2C%20Panji%2C%20Kec.%20Tenggarong%2C%20Kabupaten%20Kutai%20Kartanegara%2C%20Kalimantan%20Timur%2075513!5e0!3m2!1sid!2sid!4v1716019999999!5m2!1sid!2sid"
+      width="100%"
+      height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <footer>
+    &copy; 2025 Taman Titik Nol Kutai Kartanegara. All rights reserved.
+  </footer>
+
+</body>
+</html>
